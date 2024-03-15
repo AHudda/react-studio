@@ -24,7 +24,7 @@ function App() {
         <h1>My Bakery</h1> {/* TODO: personalize your bakery (if you want) */}
 
         {bakeryData.map((item, index) => ( // TODO: map bakeryData to BakeryItem components
-          <BakeryItem key={index} name={item.name} image={item.image} price={item.price} incrementCartTotal={(amount) => incrementCartTotal(amount)} incrementCartContents={(itemName) => incrementCartContents(itemName)}/>
+          <BakeryItem key={index} name={item.name} description ={item.description} image={item.image} price={item.price} incrementCartTotal={(amount) => incrementCartTotal(amount)} incrementCartContents={(itemName) => incrementCartContents(itemName)}/>
         ))}
       </div>
 

@@ -5,6 +5,7 @@ export default function BakeryItem(props){
             <img class="imageSpecifications" src={props.image} alt={props.name}/>
             <div class="bakeryItemDescription">
                 <p>{props.name}</p>
+                <p>{props.description}</p>
                 <p>${props.price}</p>
                 <Button onClick={() => {
                     props.incrementCartTotal(props.price);
